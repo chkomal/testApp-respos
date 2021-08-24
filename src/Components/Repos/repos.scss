@@ -1,0 +1,54 @@
+$background: #efefef;
+$blue: #006ac6;
+$yellow: #fab700;
+$grey: #75787b;
+body {
+    background-color: $background;
+    padding: 2%;
+}
+
+.table {
+    width: 100%;
+    caption {
+        text-transform: uppercase;
+        font-weight: bold;
+        color: $yellow;
+        text-align: center;
+    }
+    thead {
+        border-top: 2px solid $yellow;
+        border-bottom: 2px solid $yellow;
+        th {
+            text-transform: uppercase;
+            text-align: center;
+            padding: 10px;
+            color: $blue;
+            border: 1px solid #888686;
+        }
+    }
+    tbody {
+        tr {
+            border-bottom: 1px solid #F1F1F1;
+            color: $grey;
+            td {
+                padding: 10px;
+                border: 1px solid #888686;
+            }
+            th {
+                padding-left: 10px;
+                border: 1px solid #888686;
+            }
+        }
+    }
+    tfoot {
+        color: $yellow;
+        font-style: italic;
+        border-bottom: 2px solid $yellow;
+        tr {
+            td {
+                padding: 5px;
+                // border: 1px solid #888686;
+            }
+        }
+    }
+}
